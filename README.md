@@ -9,7 +9,8 @@
 * In the ensuing window click on the button: "DOWNLOAD CLIENT CONFIGURATION"
 * This will download a file: "credentials.json"
 * You will need to use this file to create the "token.pickle" that will give you the ability to download files from google.
-* Open up a bash terminal. Enter into the command line: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+* Open up a bash terminal. Enter into the command line: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib.
+* Also enter into the command line: pip install PyDrive.
 
 #### Step 2: Open and then run python script: Get_proper_pickle_file.py
 Note 1: Open the code in your preffered editor (I prefer spyder)
