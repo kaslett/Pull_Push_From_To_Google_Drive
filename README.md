@@ -6,17 +6,17 @@ Below are the steps: through each process. These are also located in the README 
 Process 1: Downloading from Google Drive.
 
 Step 1: Visit the url https://developers.google.com/drive/api/v3/quickstart/python and follow the steps to download your own credentials.json file
-1.1. Click on the button: "Enable The Driver API"
-1.2. In the ensuing window click on the button: "DOWNLOAD CLIENT CONFIGURATION"
-1.3. This will download a file: "credentials.json"
-1.4. You will need to use this file to create the "token.pickle" that will give you the ability to download files from google.
-1.5 Enter into the command line: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+  1.1. Click on the button: "Enable The Driver API"
+  1.2. In the ensuing window click on the button: "DOWNLOAD CLIENT CONFIGURATION"
+  1.3. This will download a file: "credentials.json"
+  1.4. You will need to use this file to create the "token.pickle" that will give you the ability to download files from google.
+  1.5 Open up a bash terminal. Enter into the command line: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
 Step 2: Run the python script: Get_proper_pickle_file.py
 Note 1: When you run this script ensure that you have access to the file: "credentials.json"
 Note 2: Remember that if you create this pickled file in python 3 you can only use this pickle file in the future in python 3. Vice-verse for python 2.
-2.1 This script will open an internet browser and ask you to log in to your google account. 
-2.2 This will give you a key that will give you access to every drive that your account can access. That key will be located in the pickled file: "token.pickle".
+  2.1 This script will open an internet browser and ask you to log in to your google account. Log into the google account that gives you access to the drives/folders you want to push and pull from.
+  2.2 This will give you a key that will give you access to every drive that your account can access. That key will be located in the pickled file: "token.pickle".
 
 Step 3: Look through and run either the python script google_download_template_py2.py (in python2) or google_download_template_py3.py (in python3)
 Note: Ensure that you have access to the file that you created previously: "token.pickle".
